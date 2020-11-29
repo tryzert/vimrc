@@ -16,9 +16,32 @@ set wrap                        " 自动换行显示
 syntax enable
 syntax on                       " 自动语法高亮
 
-"自动补全括号并且换行
+"自动不全括号并且换行
 inoremap ' ''<ESC>i
 inoremap " ""<ESC>i
 inoremap ( ()<ESC>i
 inoremap [ []<ESC>i
 inoremap { {<CR>}<ESC>O
+
+
+"---------------------------vim-plug--------------------------------------
+"vim-plug  vim插件管理器
+call plug#begin('~/.vim/plugged')
+
+"vim 打开奶牛界面，美化
+Plug 'mhinz/vim-startify'
+
+"vim 缩进线
+Plug 'Yggdroot/indentLine'
+
+"vim 左端显示文件目录树
+Plug 'preservim/nerdtree'
+
+"python-mode python代码编写插件
+Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+
+"vim-go golang代码编写插件
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+call plug#end()
+"---------------------------vim-plug--------------------------------------
