@@ -25,12 +25,15 @@ let g:rehash256 = 1
 " 设置vim背景透明，这里设置不起作用，应该在主题里设置
 set background=dark
 
+
+
 "自动补全括号并且换行
 inoremap ' ''<ESC>i
 inoremap " ""<ESC>i
 inoremap ( ()<ESC>i
 inoremap [ []<ESC>i
 inoremap { {<CR>}<ESC>O
+
 
 
 "---------------------------vim-plug--------------------------------------
