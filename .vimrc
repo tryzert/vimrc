@@ -41,8 +41,8 @@ inoremap <c-j> <ESC>o
 inoremap ,. <ESC>o
 inoremap <c-k> <ESC>O
 "插入模式下，定位到行首和行尾
-inoremap ,h <ESC>^i
-inoremap ,l <ESC>$i
+inoremap <c-h> <ESC>^i
+inoremap <c-l> <ESC>$a
 
 
 
